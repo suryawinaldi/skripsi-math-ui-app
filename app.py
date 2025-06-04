@@ -7,37 +7,10 @@ import pandas as pd
 conn = sqlite3.connect("Mini Project FIX.db", check_same_thread=False)
 
 st.markdown("""
-    <style>
-    .stApp {
-        background: linear-gradient(135deg, #0d1b2a, #1b263b);
-        background-attachment: fixed;
-        color: #ffffff;
-    }
-
-    h1 {
-        text-align: center;
-        color: #ffffff;
-    }
-
-    label, .stSelectbox label, .stTextInput label {
-        color: #e0e0e0 !important;
-    }
-
-    .stButton>button {
-        background-color: #3a86ff;
-        color: white;
-        border-radius: 8px;
-    }
-
-    .stDataFrame {
-        background-color: white;
-        border-radius: 10px;
-        padding: 10px;
-    }
-    </style>
+    <h1 style='text-align: center; color: #4B8BBE;'>
+        📚 Sistem Pencarian Data Skripsi Mahasiswa Departemen Matematika FMIPA UI
+    </h1>
 """, unsafe_allow_html=True)
-
-st.markdown("<h1>📚 Sistem Pencarian Data Skripsi Mahasiswa Departemen Matematika FMIPA UI</h1>", unsafe_allow_html=True)
 
 # Dropdown options
 peminatan_list = ["Semua"] + [row[0] for row in conn.execute("SELECT DISTINCT PEMINATAN FROM Skripsi").fetchall()]
