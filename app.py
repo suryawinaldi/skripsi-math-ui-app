@@ -9,16 +9,30 @@ conn = sqlite3.connect("Mini Project FIX.db", check_same_thread=False)
 st.markdown("""
     <style>
     .stApp {
-        background: linear-gradient(135deg, #cce7ff, #e6f2ff);
+        background: linear-gradient(135deg, #0d1b2a, #1b263b);
         background-attachment: fixed;
-        color: #003366;
+        color: #ffffff;
     }
+
     h1 {
         text-align: center;
-        color: #1a75ff;
+        color: #ffffff;
     }
+
     label, .stSelectbox label, .stTextInput label {
-        color: #00264d;
+        color: #e0e0e0 !important;
+    }
+
+    .stButton>button {
+        background-color: #3a86ff;
+        color: white;
+        border-radius: 8px;
+    }
+
+    .stDataFrame {
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
     }
     </style>
 """, unsafe_allow_html=True)
